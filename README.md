@@ -10,7 +10,7 @@ JS Code style guideline for me
 언제나 더 나은 코드를 위해 💻
 
 
-## 세미콜론
+## 세미콜론 semicolon
 가능한 경우, 항상 붙인다
 ```javascript
 'use strict';
@@ -18,7 +18,7 @@ const myVar = 3;
 const fnc = function() {};
 ```
 
-## 조건문
+## 조건문 condition
 비교 연산자가 세 개 이상이면 별도로 관리한다
 ```javascript
 const haveToJob = isTrue && orIsIt && howAboutThis;
