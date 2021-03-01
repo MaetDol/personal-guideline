@@ -34,8 +34,20 @@ if( haveToJob ) {
   specialJob( withSomeParam );
 }
 fnc({ val: 123 }, fnc( null,  getId(user) );
-function fnc( param1, param2 ) {
+function fnc({ param1, param2 }) {
   // ...
 }
 job( arr.map( v => update(v)) );
+```
+
+## 중문 내부에서의 함수 선언 delcare function within scope
+함수 접근 범위를 제한하기 위해 중문`{}` 내부에 선언할 경우, \
+변수에 할당하는 방식을 사용한다
+```javascript
+function job() {
+  const usedMultipleTimes = () => {/* ... */};
+  const someFnc = function() { 
+    console.log( this );
+  };
+}
 ```
