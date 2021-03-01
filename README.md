@@ -28,13 +28,13 @@ return users.filter( isValidUser );
 ## 소괄호 공백 whitespace
 - 문자 직후 `(|)`가 나올경우 내부 컨텐츠와 한 칸 띄운다 \
   하지만 `(|)`가 연속해서 나온다면 내부 컨텐츠와 붙여쓴 뒤 다음 `(|)`와 띄운다
-- `()`와 `{}|[]`가 이어서 나오면 붙여쓴다
+- `()`내부에서 `{}|[]`가 나오면 붙여쓴다
 ```javascript
-if( haveToJob ){
+if( haveToJob ) {
   specialJob( withSomeParam );
 }
 fnc({ val: 123 }, fnc( null,  getId(user) );
-function fnc( param1, param2 ){
+function fnc( param1, param2 ) {
   // ...
 }
 job( arr.map( v => update(v)) );
